@@ -26,3 +26,6 @@ const btnNormal = document.querySelector("#speedNormal")
 const btnSlow = document.querySelector("#speedSlow")
 btnPause.onclick = () => tl.pause();
 btnPlay.onclick = () => tl.play()
+btnFast.onclick = () => tl.timeScale(2);
+btnNormal.onclick = () => tl.timeScale(1);
+btnSlow.onclick = () => tl.timeScale(.5);
