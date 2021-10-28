@@ -191,6 +191,44 @@ body {
 Component: Controls
 */
 
+
+.c-controls__list {
+  display:inline-flex;
+}
+
+.c-controls__radio {
+  display: none;
+}
+
+.c-controls__button {
+  width: 10px;
+  height: 5px;
+  border-radius: 50px;
+  padding: 5px 16px;
+  margin: 16px;
+}
+
+.c-controls__radio:checked + .c-controls__button{
+  background-color: #0000001a;
+}
+.c-controls__button--pause {
+  background-color: #0000001a;
+  width: 25px;
+  height: 25px;
+  padding: 5px 5px;
+}
+.c-play-icon--play {
+  display: none;
+ 
+}
+
+.is-paused .c-play-icon--play{
+  display: inherit;
+}
+.is-paused .c-play-icon--pause{
+  display: none;
+}
+
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
